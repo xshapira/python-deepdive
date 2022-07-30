@@ -70,9 +70,9 @@ def test_str_repr(resource):
 
 
 def test_repr_repr(resource):
-    assert repr(resource) == '{} ({} - {}) : total={}, allocated={}'.format(
-        resource.name, resource.category, resource.manufacturer, resource.total,
-        resource.allocated
+    assert (
+        repr(resource)
+        == f'{resource.name} ({resource.category} - {resource.manufacturer}) : total={resource.total}, allocated={resource.allocated}'
     )
 
 

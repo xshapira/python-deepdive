@@ -11,7 +11,7 @@ print(keys)
 print(values)
 
 # next create a dictionary so we can easily look up the value for a given key
-args = {k: v for k, v in zip(keys, values)}
+args = dict(zip(keys, values))
 print(args)
 
 # finally let's assign the arguments to variables:

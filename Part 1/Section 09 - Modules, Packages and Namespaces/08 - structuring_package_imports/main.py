@@ -17,7 +17,7 @@ john = models.User()
 
 
 print('\n\n***** self *****')
-for k in dict(globals()).keys():
+for k in dict(globals()):
     print(k)
 
 
